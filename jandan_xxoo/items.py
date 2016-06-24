@@ -7,8 +7,10 @@
 
 import scrapy
 
-
-class JandanXxooItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class JandanItem(scrapy.Item):
+    id = scrapy.Field()
+    author = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
+    like = scrapy.Field()
+    dislike = scrapy.Field()
